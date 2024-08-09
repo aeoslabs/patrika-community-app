@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:patrika_community_app/flavors.dart';
 import 'package:patrika_community_app/utils/app_styles.dart';
+import 'package:patrika_community_app/utils/router/app_router.dart';
 import 'package:toastification/toastification.dart';
-import '/utils/router/app_router.dart';
 
 class ResidentApp extends StatefulWidget {
   const ResidentApp({super.key});
@@ -24,6 +24,7 @@ class _ResidentAppState extends State<ResidentApp> {
         debugShowCheckedModeBanner: F.appFlavor != Flavor.patrika_community,
         title: 'Flutter Demo',
         theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
           brightness: Brightness.light,
           primaryColor: Colors.black,
           fontFamily: 'SF Pro',
